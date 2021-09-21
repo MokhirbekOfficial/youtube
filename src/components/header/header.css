@@ -1,0 +1,245 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-icons{
+    display: flex;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuButton{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.menuButton:hover{
+    opacity: 0.2;
+}
+.menuButton:active{
+    opacity: 0.5;
+}
+.youtubeLogo{
+    width: 100px;
+    height: 48px;
+    object-fit: cover;
+}
+.main-icons{
+    display: flex;
+    align-items: center;
+}
+.searchInput{
+    width: 500px;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    outline-color:#1A9AEF;
+    padding: 0px 5px;
+    border-radius: 3px;
+}
+.searchButton{
+    height: 30px;
+    position: relative;
+    width: 60px;
+    border: 1px solid #CCCCCC;
+    background-color: #F8F8F8;
+    border-left: none;
+}
+.searchButton::after{
+    content: "Qidiruv";
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    padding: 8px;
+    top: 40px;
+    left: -20px;
+    color: white;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    opacity: 0.9;
+}
+.searchButton:hover{
+    background-color: #E5E5E5;
+}
+.searchButton:hover::after {
+    display: block;
+}
+.searchButton:active{
+    opacity: 0.5;
+}
+.lupe{
+    width: 20px;
+    height: 20px;
+}
+.micrafon-wrapper{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    position: relative;
+}
+.mikrafon{
+    width: 30px;
+    height: 28px;
+}
+.micrafon-wrapper:hover>.mikrafon{
+    opacity: 0.2;
+}
+.micrafon-wrapper::after{
+    content: "Ovozli Qidiruv";
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    padding: 8px;
+    top: 48px;
+    left: -20px;
+    color: white;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    opacity: 0.9;
+    text-align: center;
+}
+.micrafon-wrapper:hover::after{
+    display: block;
+}
+.micrafon-wrapper:active {
+    background-color: #CECECE;
+}
+.micrafon-wrapper:active>.mikrafon{
+    opacity: 0.5;
+}
+.right-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.right-imgs{
+    width: 30px;
+    height: 30px;
+}
+.kamera-after:hover>.right-imgs{
+    opacity: 0.2;
+}
+.kamera-after:active>.right-imgs{
+    opacity: 0.5;
+}
+.kamera-after:hover{
+    position: relative;
+}
+.kamera-after:hover::after{
+    display: block;
+}
+.kamera-after::after{
+    content: "Yaratish";
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    padding: 8px;
+    top: 43px;
+    left: -40px;
+    color: white;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    opacity: 0.9;
+    text-align: center;
+}
+.menu-wrapper{
+    position: relative;
+}
+.menu-wrapper::after{
+    content: "Menyu";
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    padding: 8px;
+    top: 43px;
+    left: -30px;
+    color: white;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    opacity: 0.9;
+    text-align: center;
+}
+.menu-wrapper:hover::after{
+    display: block;
+}
+.menu-wrapper:hover>.right-imgs{
+    opacity: 0.2;
+}
+.menu-wrapper:active>.right-imgs{
+    opacity: 0.5;
+}
+.bell-wrapper{
+    position: relative;
+}
+.bell-wrapper::after{
+    content: "Bilidirishnoma";
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    padding: 8px;
+    top: 43px;
+    left: -40px;
+    color: white;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    opacity: 0.9;
+    text-align: center;
+}
+.bell-wrapper:hover::after{
+    display: block;
+}
+.bell-wrapper:hover>.right-imgs{
+    opacity: 0.2;
+}
+.bell-wrapper:active>.right-imgs{
+    opacity: 0.5;
+}
+.admin-wrapper{
+    position: relative;
+}
+.admin-wrapper::after{
+    content: "Admin";
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    padding: 8px;
+    top: 43px;
+    left: -40px;
+    color: white;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    opacity: 0.9;
+    text-align: center;
+}
+.admin-wrapper:hover::after{
+    display: block;
+}
+.admin-wrapper:hover>.right-imgs{
+    opacity: 0.2;
+}
+.admin-wrapper:active>.right-imgs{
+    opacity: 0.5;
+}

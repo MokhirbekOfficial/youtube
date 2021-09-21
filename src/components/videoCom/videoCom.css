@@ -1,0 +1,184 @@
+.videoWrapper{
+    display: flex;
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.mainVideo{
+    width: 80%;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+.osmondagiBolalar{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+.videoTitle{
+    font-size: 26px;
+    line-height: 35px;
+    color: #192646;
+    font-weight: bold;
+}
+.viewsWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.views{
+    font-size: 14px;
+    line-height: 21px;
+    color: #C2C2C2;
+}
+.likeWrapper{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+.like{
+    border-radius: 40%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+}
+.likeText{
+    font-size: 12px;
+    line-height: 17px;
+    color: #192646;
+    margin-left: 4px;
+}
+.firstHr{
+    background-color: rgba(216, 216, 216, 0.5);
+    border: none;
+    height: 1px;
+}
+.nextChannel{
+    display: flex;
+    justify-content: space-between;
+}
+.channelTitle{
+    display: flex;
+    width: 70%;
+}
+.channelImgPart{
+    width: 50px;
+    height: 50px;
+}
+.channelMainTitle{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.titleChannel{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #19202C;
+}
+.publishDate{
+    font-size: 10px;
+    line-height: 11px;
+    color: #C2C2C2;
+}
+.mainArticle{
+    font-size: 13px;
+    line-height: 19px;
+}
+.showMore{
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+}
+.subscribe2{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FF0000;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.videoList{
+    height: 600px;
+    width: 400px;
+    overflow: hidden;
+}
+.videoList:hover{
+    overflow: scroll;
+}
+.nextVideo{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.autoplayWrapper{
+    display: flex;
+    align-items: center;
+}
+.autoplay{
+    margin-right: 5px;
+}
+
+/* responsive */
+@media only screen and (max-width:500px){
+    .videoWrapper{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    .mainVideo{
+        width: 100%;
+        margin: 0px;
+        border: 2px red blue;
+    }
+    .osmondagiBolalar{
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+        border: 2px red green;
+        border-radius: none;
+    }
+    .viewsWrapper{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .curImg{
+        display: none;
+    }
+    .likeWrapper{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .videoTitle{
+        margin-left: 10px;
+    }
+    .like{
+        margin-left: 20px;
+    }
+    .mainArticle{
+        display: none;
+    }
+    .showMore{
+        display: none;
+    }
+    .subscribe2{
+        display: none;
+    }
+    .nextChannel{
+        margin-left: 10px;
+    }
+    .videoList{
+        width: 100%;
+    }
+    .nextVideo{
+        width: 90%;
+        margin-top: 10px;
+    }
+}

@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+
+html{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    padding: 0;
+    margin: 0;
+}
+h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.empty-div{
+    height: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @media only screen and (max-width:500px){
+      .left-site{
+          display: none;
+      }
+      .menuButton{
+          display: none;
+      }
+      .right-site{
+          width: 100%;
+      }
+      .right-icons{
+          display: none;
+      }
+      .main-item{
+          justify-content: center;
+      }
+      .items{
+          width: 90vw;
+      }
+      .iframe{
+          width: 90vw;
+      }
+      .header-container{
+          width: 90vw;
+          display: flex;
+      }
+      .main-icons{
+          width: 60%;
+          display: flex;
+          justify-content: flex-end;
+      }
+      .searchInput{
+          display: none;
+          position: relative;
+      }
+      .micrafon-wrapper{
+          display: none;
+          margin-left: auto;
+          position: absolute;
+      }
+      .admin2{
+          display: block;
+          margin-left: auto;
+      }
+      .searchButton{
+        display: none;
+      }
+      .lupe2{
+          display: block;
+          margin-right: 20px;
+      }
+      .searchButton:hover{
+          position: 1;
+          background-color: transparent;
+      }
+      .searchButton:hover::after{
+          display: none;
+      }
+      .admin-wrapper:hover::after{
+          display: none;
+      }
+      .modal{
+        position: fixed;
+        top: 20%;
+        left: 25%;
+        width: 50%;
+      }
+      .responsivaSearch{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 777;
+      }
+      .resSearchWrap{
+          width: 100vw;
+          background-color: white;
+          height: 50px;
+          position: absolute;
+          top: 0px;
+          z-index: 7777;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+      .responsiveimg{
+          width: 35px;
+          height: 30px;
+          opacity: 0.5;
+      }
+      .responsiveimg:active{
+          opacity: 0.9;
+      }
+      .responsivaSearchInput{
+          width: 70%;
+          border: none;
+          outline: none;
+          border-bottom: 1.5px solid blue;
+          height: 30px;
+          padding-bottom: 3px;
+      }
+      .responsiveSearchButton{
+          border: none;
+          background-color: transparent;
+      }
+      .responsiveSearchButton:active{
+          opacity: 0.5;
+      }
+     
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
